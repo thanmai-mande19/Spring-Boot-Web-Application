@@ -7,5 +7,7 @@ import com.example.products.domain.Product;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product,Long>{
+	
+	public Product findProductById(Long id);
 
 }
