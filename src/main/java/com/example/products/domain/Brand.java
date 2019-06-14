@@ -37,6 +37,9 @@ public class Brand implements Serializable{
 	@JoinColumn(name="brand_id")
 	public List<Product> products;
 	
+	@Column(name="status")
+	public String status;
+	
 	
 	@Column(name="crt_dt")
 	public Date crtDt;
@@ -104,6 +107,14 @@ public class Brand implements Serializable{
 
 	public void setLastModifyUser(String lastModifyUser) {
 		this.lastModifyUser = lastModifyUser;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 	
 
